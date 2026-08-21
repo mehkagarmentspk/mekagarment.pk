@@ -1,1 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>MEHKA GARMENTS — Premium Menswear</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       LOADER
+  ========================== -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">MEHKA</div>
+    <div class="loader-line"></div>
+  </div>
+
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <header class="navbar">
+
+    <a href="#" class="logo">
+      <span>MEHKA</span>
+      <small>GARMENTS</small>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home">HOME</a>
+      <a href="#collection">COLLECTION</a>
+      <a href="#categories">CATEGORIES</a>
+      <a href="#about">ABOUT</a>
+    </nav>
+
+    <button class="cart-button" id="cartButton">
+      CART
+      <span id="cartCount">0</span>
+    </button>
+
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+  <main>
+
+    <section class="hero" id="home">
+
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+      >
+        <source src="assets/videos/hero-fashion.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          PREMIUM MENSWEAR — 2026 COLLECTION
+        </p>
+
+        <h1>
+          WEAR
+          <em>CONFIDENCE.</em>
+        </h1>
+
+        <p class="hero-description">
+          Modern essentials crafted for men who appreciate
+          clean design, premium details and effortless style.
+        </p>
+
+        <a href="#collection" class="hero-button">
+          EXPLORE COLLECTION
+          <span>↗</span>
+        </a>
+
+      </div>
+
+      <div class="hero-bottom">
+
+        <span>01 — 06</span>
+
+        <span class="scroll-text">
+          SCROLL TO EXPLORE ↓
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+    <section class="intro" id="about">
+
+      <div class="section-label">
+        01 / THE BRAND
+      </div>
+
+      <div class="intro-content">
+
+        <h2>
+          SIMPLE.
+          <em>SHARP.</em>
+          TIMELESS.
+        </h2>
+
+        <p>
+          Mehka Garments brings together refined silhouettes,
+          comfortable fabrics and modern menswear aesthetics.
+          Designed for everyday confidence.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CATEGORIES
+    ========================== -->
+    <section class="categories" id="categories">
+
+      <div class="section-heading">
+
+        <div>
+          <span class="mini-label">02 / SHOP BY CATEGORY</span>
+          <h2>THE <em>COLLECTION</em></h2>
+        </div>
+
+        <p>
+          Explore our carefully selected menswear categories.
+        </p>
+
+      </div>
+
+
+      <div class="category-grid">
+
+        <button class="category-card active" data-category="shirts">
+          <span class="category-number">01</span>
+          <span class="category-name">FULL SLEEVE SHIRTS</span>
+          <span class="category-arrow">↗</span>
+        </button>
+
+        <button class="category-card" data-category="polo">
+          <span class="category-number">02</span>
+          <span class="category-name">POLO</span>
+          <span class="category-arrow">↗</span>
+        </button>
+
+        <button class="category-card" data-category="check">
+          <span class="category-number">03</span>
+          <span class="category-name">CHECK SHIRTS</span>
+          <span class="category-arrow">↗</span>
+        </button>
+
+        <button class="category-card" data-category="stretch">
+          <span class="category-number">04</span>
+          <span class="category-name">STRETCH SHIRTS</span>
+          <span class="category-arrow">↗</span>
+        </button>
+
+        <button class="category-card" data-category="pants">
+          <span class="category-number">05</span>
+          <span class="category-name">PANTS</span>
+          <span class="category-arrow">↗</span>
+        </button>
+
+        <button class="category-card" data-category="shorts">
+          <span class="category-number">06</span>
+          <span class="category-name">SHORTS</span>
+          <span class="category-arrow">↗</span>
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRODUCTS
+    ========================== -->
+    <section class="products-section" id="collection">
+
+      <div class="products-top">
+
+        <div>
+          <span class="mini-label">03 / FEATURED</span>
+          <h2>SELECTED <em>PIECES</em></h2>
+        </div>
+
+        <span class="product-counter" id="productCounter">
+          01 / 03
+        </span>
+
+      </div>
+
+
+      <div class="products-grid" id="productsGrid">
+
+        <!-- PRODUCT 1 -->
+        <article class="product-card">
+
+          <div class="product-image">
+
+            <img
+              src="assets/images/shirt-black.jpg"
+              alt="Classic Black Full Sleeve Shirt"
+              onerror="this.style.display='none'"
+            >
+
+            <span class="product-tag">NEW</span>
+
+            <button class="quick-view">
+              QUICK VIEW ↗
+            </button>
+
+          </div>
+
+          <div class="product-info">
+
+            <div>
+              <span class="product-category">
+                FULL SLEEVE SHIRT
+              </span>
+
+              <h3>Classic Black Shirt</h3>
+            </div>
+
+            <strong>PKR 2,499</strong>
+
+          </div>
+
+
+          <div class="product-options">
+
+            <div class="option-label">SIZE</div>
+
+            <div class="sizes">
+              <button>S</button>
+              <button class="selected">M</button>
+              <button>L</button>
+              <button>XL</button>
+            </div>
+
+            <div class="option-label quantity-title">
+              QUANTITY
+            </div>
+
+            <div class="quantity">
+
+              <button class="qty-minus">−</button>
+
+              <span>1</span>
+
+              <button class="qty-plus">+</button>
+
+            </div>
+
+            <button class="add-cart">
+              ADD TO CART
+              <span>↗</span>
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- PRODUCT 2 -->
+        <article class="product-card">
+
+          <div class="product-image">
+
+            <img
+              src="assets/images/shirt-white.jpg"
+              alt="Essential White Shirt"
+              onerror="this.style.display='none'"
+            >
+
+            <span class="product-tag">ESSENTIAL</span>
+
+            <button class="quick-view">
+              QUICK VIEW ↗
+            </button>
+
+          </div>
+
+          <div class="product-info">
+
+            <div>
+              <span class="product-category">
+                ESSENTIAL COLLECTION
+              </span>
+
+              <h3>Essential White Shirt</h3>
+            </div>
+
+            <strong>PKR 2,299</strong>
+
+          </div>
+
+
+          <div class="product-options">
+
+            <div class="option-label">SIZE</div>
+
+            <div class="sizes">
+              <button>S</button>
+              <button class="selected">M</button>
+              <button>L</button>
+              <button>XL</button>
+            </div>
+
+            <div class="option-label quantity-title">
+              QUANTITY
+            </div>
+
+            <div class="quantity">
+
+              <button class="qty-minus">−</button>
+
+              <span>1</span>
+
+              <button class="qty-plus">+</button>
+
+            </div>
+
+            <button class="add-cart">
+              ADD TO CART
+              <span>↗</span>
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- PRODUCT 3 -->
+        <article class="product-card">
+
+          <div class="product-image">
+
+            <img
+              src="assets/images/shirt-green.jpg"
+              alt="Premium Green Shirt"
+              onerror="this.style.display='none'"
+            >
+
+            <span class="product-tag">PREMIUM</span>
+
+            <button class="quick-view">
+              QUICK VIEW ↗
+            </button>
+
+          </div>
+
+          <div class="product-info">
+
+            <div>
+              <span class="product-category">
+                PREMIUM COLLECTION
+              </span>
+
+              <h3>Signature Green Shirt</h3>
+            </div>
+
+            <strong>PKR 2,699</strong>
+
+          </div>
+
+
+          <div class="product-options">
+
+            <div class="option-label">SIZE</div>
+
+            <div class="sizes">
+              <button>S</button>
+              <button class="selected">M</button>
+              <button>L</button>
+              <button>XL</button>
+            </div>
+
+            <div class="option-label quantity-title">
+              QUANTITY
+            </div>
+
+            <div class="quantity">
+
+              <button class="qty-minus">−</button>
+
+              <span>1</span>
+
+              <button class="qty-plus">+</button>
+
+            </div>
+
+            <button class="add-cart">
+              ADD TO CART
+              <span>↗</span>
+            </button>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         LOOKBOOK
+    ========================== -->
+    <section class="lookbook">
+
+      <div class="lookbook-image">
+
+        <img
+          src="assets/images/lookbook-01.jpg"
+          alt="Mehka Garments Lookbook"
+          onerror="this.style.display='none'"
+        >
+
+      </div>
+
+      <div class="lookbook-content">
+
+        <span class="mini-label">
+          04 / LOOKBOOK
+        </span>
+
+        <h2>
+          MADE FOR
+          <em>YOUR MOMENT.</em>
+        </h2>
+
+        <p>
+          From everyday essentials to elevated occasions,
+          discover pieces designed to move with you.
+        </p>
+
+        <a href="#collection" class="outline-button">
+          VIEW LOOKBOOK ↗
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CTA
+    ========================== -->
+    <section class="final-cta">
+
+      <span class="mini-label">
+        MEHKA GARMENTS
+      </span>
+
+      <h2>
+        DRESS
+        <em>DIFFERENT.</em>
+      </h2>
+
+      <a href="#collection" class="hero-button">
+        SHOP COLLECTION
+        <span>↗</span>
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       CART DRAWER
+  ========================== -->
+  <aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+      <h2>YOUR CART</h2>
+
+      <button id="closeCart">
+        ×
+      </button>
+
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">
+        Your cart is empty.
+      </p>
+    </div>
+
+    <div class="cart-footer">
+
+      <div>
+        <span>TOTAL</span>
+        <strong id="cartTotal">PKR 0</strong>
+      </div>
+
+      <button class="checkout-button">
+        CHECKOUT ↗
+      </button>
+
+    </div>
+
+  </aside>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer>
+
+    <div class="footer-logo">
+      MEHKA
+      <span>GARMENTS</span>
+    </div>
+
+    <p>
+      Premium menswear. Made with confidence.
+    </p>
+
+    <div class="footer-bottom">
+
+      <span>© 2026 MEHKA GARMENTS</span>
+
+      <span>PAKISTAN</span>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -516,7 +516,25 @@ a {
 .product-options {
   padding: 18px 0 5px;
 }
+.colors {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
 
+.color-swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #d1d5db;
+  cursor: pointer;
+  padding: 0;
+}
+
+.color-swatch.selected {
+  outline: 2px solid #172554;
+  outline-offset: 3px;
+}
 .option-label {
   font-size: 8px;
   letter-spacing: 2px;

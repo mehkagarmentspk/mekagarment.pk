@@ -199,13 +199,12 @@ a {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(245, 243, 239, 0.55) 0%,
-      rgba(245, 243, 239, 0.28) 45%,
-      rgba(245, 243, 239, 0.05) 100%
-    );
+  background: linear-gradient(
+    90deg,
+    rgba(245, 243, 239, 0.18) 0%,
+    rgba(245, 243, 239, 0.06) 45%,
+    rgba(245, 243, 239, 0) 75%
+  );
 }
 
 .hero-content {

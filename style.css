@@ -996,3 +996,25 @@ footer p {
     gap: 12px;
   }
 }
+.product-thumbnails {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.product-thumb {
+  width: 55px;
+  height: 65px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: 0.2s ease;
+}
+
+.product-thumb.active {
+  border: 2px solid #111;
+}
+
+.product-thumb:hover {
+  transform: scale(1.05);
+}

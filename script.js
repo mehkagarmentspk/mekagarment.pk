@@ -438,5 +438,18 @@ document.addEventListener("DOMContentLoaded", () => {
   // -------------------------------
 
   updateCart();
+document.querySelectorAll(".product-thumb").forEach(function (thumb) {
+  thumb.addEventListener("click", function () {
+    const productImage = this.closest(".product-image").querySelector("img");
+    productImage.src = this.src;
 
+    this.closest(".product-thumbnails")
+      .querySelectorAll(".product-thumb")
+      .forEach(function (item) {
+        item.classList.remove("active");
+      });
+
+    this.classList.add("active");
+  });
+});
 });
